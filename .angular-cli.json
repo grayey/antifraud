@@ -22,6 +22,7 @@
         "assets/plugins/morris/morris.css",
         "assets/css/bootstrap.min.css",
         "assets/plugins/datatables/dataTables.bootstrap4.min.css",
+        "assets/plugins/animate/animate.min.css",
         "assets/plugins/datatables/buttons.bootstrap4.min.css",
         "assets/plugins/datatables/responsive.bootstrap4.min.css",
         "assets/css/icons.css",

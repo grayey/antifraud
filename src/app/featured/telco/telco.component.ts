@@ -11,6 +11,8 @@ import {SharedService} from '../../../services/api-folder/setup-service';
 })
 export class TelcoComponent extends MagicClasses implements OnInit {
 
+
+
     constructor(_telcoService: SharedService) {
         super(_telcoService);
     }
@@ -18,5 +20,6 @@ export class TelcoComponent extends MagicClasses implements OnInit {
     ngOnInit() {
         UI.run('Banks');
     }
+
 
 }

@@ -2,3 +2,9 @@
 .ml-1{
     color: white;
 }
+.shadow{
+    box-shadow: 0 .8rem 3rem rgba(0,0,0,.40)!important;
+}
+.card-footer, .card-header{
+    background-color: rgba(0, 0, 0, 0.12)
+}

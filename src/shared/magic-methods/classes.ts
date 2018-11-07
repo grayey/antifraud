@@ -1,6 +1,6 @@
-
 import {SharedService} from '../../services/api-folder/setup-service';
 import {AbstractControl} from '@angular/forms';
+import {setTimeout} from "timers";
 
 declare const $: any;
 
@@ -9,6 +9,8 @@ export class MagicClasses {
 
     constructor(public _setUP: SharedService) {
     }
+
+    public showCard: boolean = false;
 
     public loaders = {
         processing: false
@@ -112,5 +114,25 @@ export class MagicClasses {
         };
     }
 
+    public showDiv(cardId) {
+        if (!this.showCard) {
+            $(`#${cardId}`).removeClass('zoomOut');
+            $(`#${cardId}`).addClass('zoomIn');
+
+            setTimeout(() => {
+                this.showCard = !this.showCard;
+            }, 2)
+
+            return;
+        }
+        console.log('Adding class fadeOut');
+        $(`#${cardId}`).removeClass('zoomIn');
+        $(`#${cardId}`).addClass('zoomOut');
+
+        setTimeout(() => {
+            this.showCard = !this.showCard;
+        }, 500);
+
+    }
 
 }
