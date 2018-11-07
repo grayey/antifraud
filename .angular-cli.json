@@ -1,0 +1,92 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "portal"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "logo_dark.jpg"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "assets/plugins/morris/morris.css",
+        "assets/css/bootstrap.min.css",
+        "assets/plugins/datatables/dataTables.bootstrap4.min.css",
+        "assets/plugins/datatables/buttons.bootstrap4.min.css",
+        "assets/plugins/datatables/responsive.bootstrap4.min.css",
+        "assets/css/icons.css",
+        "assets/css/style.css",
+        "styles.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "assets/js/popper.min.js",
+        "assets/js/bootstrap.min.js",
+        "assets/js/modernizr.min.js",
+        "assets/js/waves.js",
+        "assets/js/jquery.slimscroll.js",
+        "assets/js/jquery.nicescroll.js",
+        "assets/js/jquery.scrollTo.min.js",
+        "../node_modules/datatables.net/js/jquery.dataTables.js",
+        "assets/plugins/datatables/dataTables.bootstrap4.min.js",
+        "../node_modules/datatables.net-buttons/js/dataTables.buttons.js",
+        "assets/plugins/datatables/buttons.bootstrap4.min.js",
+        "assets/plugins/datatables/jszip.min.js",
+        "assets/plugins/datatables/pdfmake.min.js",
+        "assets/plugins/datatables/vfs_fonts.js",
+        "../node_modules/datatables.net-buttons/js/buttons.colVis.js",
+        "../node_modules/datatables.net-buttons/js/buttons.flash.js",
+        "../node_modules/datatables.net-buttons/js/buttons.html5.js",
+        "../node_modules/datatables.net-buttons/js/buttons.print.js",
+        "assets/plugins/datatables/dataTables.responsive.min.js",
+        "assets/plugins/datatables/responsive.bootstrap4.min.js",
+        "assets/plugins/morris/morris.min.js",
+        "assets/plugins/raphael/raphael-min.js",
+        "assets/js/app.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
